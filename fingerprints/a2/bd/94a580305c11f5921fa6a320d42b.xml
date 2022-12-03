@@ -1,0 +1,19 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2022-12-02 14:21:10.813 UTC</timestamp>
+  <md5sum>a2bd94a580305c11f5921fa6a320d42b</md5sum>
+  <fileName>Credential id=aec9efa6-73e3-45bf-a590-19b236e85aad name=jenkins/******</fileName>
+  <usages>
+    <entry>
+      <string>build deploy</string>
+      <ranges>31</ranges>
+    </entry>
+  </usages>
+  <facets>
+    <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@1189.vf61b_a_5e2f62e">
+      <timestamp>1669990870812</timestamp>
+      <itemFullName>build deploy</itemFullName>
+      <timestamp0>1669990870812</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
+  </facets>
+</fingerprint>

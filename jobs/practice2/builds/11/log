@@ -1,0 +1,28 @@
+Started by GitHub push by poojam11993
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/practice2
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/practice2/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/poojam11993/myrepo.git # timeout=10
+Fetching upstream changes from https://github.com/poojam11993/myrepo.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/poojam11993/myrepo.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 35fa15e7c9f1a74d4620b3cae0f1af2339fc9eb1 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 35fa15e7c9f1a74d4620b3cae0f1af2339fc9eb1 # timeout=10
+Commit message: "Create build"
+ > git rev-list --no-walk fcd2ef80411b51eff46d15f4e38a41867875c13a # timeout=10
+[practice2] $ /bin/sh -xe /tmp/jenkins5080339367510888752.sh
++ sh sum.sh 4 7
+sum.sh
+the sum is 11
+using jenkins
+learning to automate things
+demo of poll scm
+This is the last line
+this is for webhook
+Finished: SUCCESS

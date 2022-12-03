@@ -1,0 +1,26 @@
+Started by user [8mha:////4HqBXh+1v11nP+VBRGGhgaqWp2YB56EN0CT4dWALnsa/AAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZh/dLi1CL9gvz8rMT43MS8/IzEIgDIgYeryAAAAA==[0mpuja Manohar
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/practice2
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/practice2/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/poojam11993/myrepo.git # timeout=10
+Fetching upstream changes from https://github.com/poojam11993/myrepo.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/poojam11993/myrepo.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 671b111021d8391a4c47ef45cd7153eb20e18c25 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 671b111021d8391a4c47ef45cd7153eb20e18c25 # timeout=10
+Commit message: "Update tomcat.sh"
+ > git rev-list --no-walk 671b111021d8391a4c47ef45cd7153eb20e18c25 # timeout=10
+[practice2] $ /bin/sh -xe /tmp/jenkins3939290292524891095.sh
++ sh sum.sh 4 7
+sum.sh
+the sum is 11
+using jenkins
+learning to automate things
+demo of poll scm
+Finished: SUCCESS

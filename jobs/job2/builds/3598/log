@@ -1,0 +1,55 @@
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Running as SYSTEM
+Building remotely on [8mha:////4IJPVI5Ssn8Bup1s+Um3XGhTRpbr1sYLJgUx2MMem/ZDAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLJUIwCCp2lrxQAAAA==[0mslave2 (slave) in workspace /home/slave2/workspace/job2
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/slave2/workspace/job2/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/poojam11993/myrepo.git # timeout=10
+Fetching upstream changes from https://github.com/poojam11993/myrepo.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/poojam11993/myrepo.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+FATAL: java.io.IOException: Unexpected termination of the channel
+java.io.EOFException
+	at java.base/java.io.ObjectInputStream$PeekInputStream.readFully(ObjectInputStream.java:2911)
+	at java.base/java.io.ObjectInputStream$BlockDataInputStream.readShort(ObjectInputStream.java:3406)
+	at java.base/java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:932)
+	at java.base/java.io.ObjectInputStream.<init>(ObjectInputStream.java:375)
+	at hudson.remoting.ObjectInputStreamEx.<init>(ObjectInputStreamEx.java:49)
+	at hudson.remoting.Command.readFrom(Command.java:142)
+	at hudson.remoting.Command.readFrom(Command.java:128)
+	at hudson.remoting.AbstractSynchronousByteArrayCommandTransport.read(AbstractSynchronousByteArrayCommandTransport.java:35)
+	at hudson.remoting.SynchronousCommandTransport$ReaderThread.run(SynchronousCommandTransport.java:61)
+Caused: java.io.IOException: Unexpected termination of the channel
+	at hudson.remoting.SynchronousCommandTransport$ReaderThread.run(SynchronousCommandTransport.java:75)
+Also:   hudson.remoting.Channel$CallSiteStackTrace: Remote call to slave2
+		at hudson.remoting.Channel.attachCallSiteStackTrace(Channel.java:1784)
+		at hudson.remoting.Request.call(Request.java:199)
+		at hudson.remoting.Channel.call(Channel.java:999)
+		at org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler.execute(RemoteGitImpl.java:143)
+		at jdk.internal.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler.invoke(RemoteGitImpl.java:129)
+		at com.sun.proxy.$Proxy77.execute(Unknown Source)
+		at hudson.plugins.git.GitSCM.fetchFrom(GitSCM.java:1000)
+		at hudson.plugins.git.GitSCM.retrieveChanges(GitSCM.java:1244)
+		at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1308)
+		at hudson.scm.SCM.checkout(SCM.java:540)
+		at hudson.model.AbstractProject.checkout(AbstractProject.java:1241)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:647)
+		at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:85)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:519)
+		at hudson.model.Run.execute(Run.java:1899)
+		at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:44)
+		at hudson.model.ResourceController.execute(ResourceController.java:107)
+		at hudson.model.Executor.run(Executor.java:449)
+Caused: hudson.remoting.RequestAbortedException
+	at hudson.remoting.Request.abort(Request.java:345)
+	at hudson.remoting.Channel.terminate(Channel.java:1080)
+	at hudson.remoting.SynchronousCommandTransport$ReaderThread.run(SynchronousCommandTransport.java:90)
+Finished: FAILURE

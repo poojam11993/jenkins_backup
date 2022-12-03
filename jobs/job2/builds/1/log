@@ -1,0 +1,26 @@
+Started by user [8mha:////4HqBXh+1v11nP+VBRGGhgaqWp2YB56EN0CT4dWALnsa/AAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZh/dLi1CL9gvz8rMT43MS8/IzEIgDIgYeryAAAAA==[0mpuja Manohar
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/job2
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/poojam11993/myrepo.git
+ > git init /var/lib/jenkins/workspace/job2 # timeout=10
+Fetching upstream changes from https://github.com/poojam11993/myrepo.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/poojam11993/myrepo.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/poojam11993/myrepo.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision a79fff678fc45c10279e4881797b7076a43a2e18 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a79fff678fc45c10279e4881797b7076a43a2e18 # timeout=10
+Commit message: "Update sum.sh"
+First time build. Skipping changelog.
+[job2] $ /bin/sh -xe /tmp/jenkins16186266852704394686.sh
++ sh sum.sh 12 8
+sum.sh
+the sum is 20
+Finished: SUCCESS

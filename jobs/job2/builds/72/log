@@ -1,0 +1,26 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/job2
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/job2/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/poojam11993/myrepo.git # timeout=10
+Fetching upstream changes from https://github.com/poojam11993/myrepo.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/poojam11993/myrepo.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision d79ed68cbb30f39c26c2aeb578d62dd17d59be73 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d79ed68cbb30f39c26c2aeb578d62dd17d59be73 # timeout=10
+Commit message: "Update sum.sh"
+ > git rev-list --no-walk d79ed68cbb30f39c26c2aeb578d62dd17d59be73 # timeout=10
+[job2] $ /bin/sh -xe /tmp/jenkins13165119044755541116.sh
++ sh sum.sh 12 8
+sum.sh
+the sum is 20
+using jenkins
+learning to automate things
+demo of poll scm
+Finished: SUCCESS
